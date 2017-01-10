@@ -28,7 +28,7 @@ author: till
 #
 #url: 'http://services.informatik.hs-mannheim.de/~nagel/gdv'
 url: 'http://tillnagel.github.io'
-baseurl: 'gdv-website'
+baseurl: '/gdv-website'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
