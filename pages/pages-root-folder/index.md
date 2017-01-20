@@ -9,6 +9,9 @@ header: no
 *GDV - Grundlagen der Informationsvisualisierung* ist ein Kurs unter der Leitung von Prof. Dr. [Till Nagel][1].<br/>Wintersemester 2016/2017, Hochschule Mannheim, am Studiengang [Informatik][2].
 <!--more-->
 
+
+{% assign url = site.baseurl | prepend: site.url %}
+
 {% for post in site.categories.projects %}
 {% assign rowfinder = forloop.index | modulo: 3 %}
 {% if rowfinder == 1 %}
