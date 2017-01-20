@@ -19,7 +19,7 @@ header: no
   {% endif %}
 {% endif %}
     <div class="medium-4 columns b30" style="float:left">
-        <a href="{{ site.url }}{{ post.url }}">
+        <a href="{{ url }}{{ post.url }}">
         <img src="{{ site.urlimg }}/{{post.image.title}}" />
         <h2 class="font-size-h3 t10">{{ post.title }}</h2>
         <p>{{ post.subheadline }}<br/>
