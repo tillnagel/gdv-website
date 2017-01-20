@@ -27,7 +27,6 @@ header: no
         <h2 class="font-size-h3 t10">{{ post.title }}</h2>
         <p>{{ post.subheadline }}<br/>
           <em>{{ post.author }}</em>
-          <em>{{ url }} ( {{ site.baseurl }} ) </em>
         </p>
         </a>
     </div>
