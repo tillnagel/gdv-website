@@ -8,7 +8,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: LateConnections/template-teaser.jpg
+    title: LateConnections/main.jpg
     caption: Teaser
 author: Manuel Bäuerle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pregler &amp; Ugur Tunali
 ---
@@ -26,14 +26,14 @@ author: Manuel Bäuerle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pre
 ### Daten
 Quellen, Erhebung, Parsing, Aggregation, ...
 
-Wir haben die Daten von [OpenStreetMap](http://openstreetmap.org/) genutzt, ...
+Wir haben die Daten von ... genutzt, ...
 
 ### Prozess
 Sinnvolle Auswahl relevanter Experimente.
 
 <figure>
-  <img src="{{ site.urlimg }}/meinProjekt/template-image1.jpg" />
-  <figcaption >Eine Bildbeschreibung</figcaption>
+  <img src="{{ site.urlimg }}/LateConnections/history.png" />
+  <figcaption >Historienverlauf einer Haltestelle</figcaption>
 </figure>
 
 ## Prototyp / Ergebnisse
