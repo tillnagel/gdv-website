@@ -14,7 +14,7 @@ image:
 author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp, Mihkail Polishuk
 ---
 
-## [Abstract]
+## Abstract
 Die Anwendung visualisiert diverse Geodaten zu Wald-, Grünflächen und Parks in der „Grünstadt Zürich“ und ermöglicht einen Vergleich diesbezüglicher Flächenverteilung mit Parkflächen.
 
 
