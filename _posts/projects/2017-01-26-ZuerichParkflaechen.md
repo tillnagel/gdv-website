@@ -49,8 +49,10 @@ Die Diagrammansicht (C) stellt die Gesamtflächen der visualisierten Bezirke dem
 <!--Quellen, Erhebung, Parsing, Aggregation, ...-->
 
 Genutzte Datenquellen:
-[Opendata Projekt der Grünstadt Zürich](https://data.stadt-zuerich.ch/)
-[Overpass Turbo](https://overpass-turbo.eu/) ein Datenfilterungs Tool für [OpenStreetMap](http://openstreetmap.org/)
+
+- [Opendata Projekt der Grünstadt Zürich](https://data.stadt-zuerich.ch/)
+
+- [Overpass Turbo](https://overpass-turbo.eu/) ein Datenfilterungs Tool für [OpenStreetMap](http://openstreetmap.org/)
 
 ### Prozess
 <!--Sinnvolle Auswahl relevanter Experimente.-->
@@ -81,10 +83,13 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 
 ### Implementierung
 #### Verwendete Tools/Libraries:
--- Java Processing
--- Unfolding Maps für die Karten
--- GiCentre für Diagramme
--- ControlP5 für Filter
+- Java Processing
+
+- Unfolding Maps für die Karten
+
+- GiCentre für Diagramme
+
+- ControlP5 für Filter
 
 <!--Wie haben Sie die Visualisierung umgesetzt? Welche Tools haben Sie für welche Schritte eingesetzt?-->
 
