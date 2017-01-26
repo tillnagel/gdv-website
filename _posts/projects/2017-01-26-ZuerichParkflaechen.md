@@ -54,6 +54,10 @@ Genutzte Datenquellen:
 
 - [Overpass Turbo](https://overpass-turbo.eu/) ein Datenfilterungs Tool für [OpenStreetMap](http://openstreetmap.org/)
 
+### Probleme bei den Datenquellen
+Leider mussten wir feststellen dass trotz Kombination unserer beiden Datenquellen, die Daten nicht vollständig waren.
+Das sieht man vorallem wenn man Sateliten Aufnahmen der Stadt mit den eingetragenen Grünflächen und Parks vergleicht.
+
 ### Prozess
 <!--Sinnvolle Auswahl relevanter Experimente.-->
 
@@ -80,6 +84,17 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 
 ### Erkenntnisse
 <!--Was haben Sie herausgefunden? Können Sie ein/zwei Aussagen oder Stories hervorheben?-->
+
+- Zunahme der Grünflächen in Richtung der Stadtgrenzen.
+
+- Parks scheinen sich auf das Zentrum Zürichs zu konzentrieren.
+
+- Überwiegend zeitbegrenzte Parkplätze im Stadtkern Zürichs.
+
+- In der Nähe der Grünflächen gibt es zwar viele Parkplätze, die Mehrheit davon ist aber zeitbegrenzt.
+
+- Es gibt etwa doppelt so viele kostenpflichtige wie zeitbegrenzte Parkmöglichkeiten.
+
 
 ### Implementierung
 
