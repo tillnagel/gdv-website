@@ -14,7 +14,7 @@ image:
 author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp, Mihkail Polishuk
 ---
 
-[Abstract]
+## [Abstract]
 Die Anwendung visualisiert diverse Geodaten zu Wald-, Grünflächen und Parks in der „Grünstadt Zürich“ und ermöglicht einen Vergleich diesbezüglicher Flächenverteilung mit Parkflächen.
 
 Gegliedert wird die Darstellung in eine Übersichts-, sowie eine Diagrammansicht und vier Detailansichten zur Veranschaulichung maximal zweier Bezirke Zürichs und deren Gegenüberstellung zum Züricher Durchschnitt.
@@ -41,6 +41,7 @@ Die Diagrammansicht (C) stellt die Gesamtflächen der visualisierten Bezirke dem
   <figcaption >Allgemeine Übersicht über die Funktionalitäten der Anwendung</figcaption>
 </figure>
 
+- - - 
 
 ## Daten / Auswertung
 
@@ -69,8 +70,8 @@ Die folgenden Bilder zeigen zwei unsere frühen Explorationen und Zusammenstellu
 </figure>
 
 
-## Prototyp / Ergebnisse
-Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen:
+<!--## Prototyp / Ergebnisse
+Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 
 ### Visualisierung
 <!--Ergebnisse, Design, Prototyp. Darstellungen echter oder ausgewählter Daten.-->
@@ -80,14 +81,12 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen:
 
 ### Implementierung
 #### Verwendete Tools/Libraries:
-- Java Processing
-- Unfolding Maps für die Karten
-- GiCentre für Diagramme
-- ControlP5 für Filter
+-- Java Processing
+-- Unfolding Maps für die Karten
+-- GiCentre für Diagramme
+-- ControlP5 für Filter
 
 <!--Wie haben Sie die Visualisierung umgesetzt? Welche Tools haben Sie für welche Schritte eingesetzt?-->
-
-- - -
 
 
 #### Probleme bei der Implementierung:
@@ -106,6 +105,7 @@ function setup() {
 }
 ```-->
 
+- - - 
 
 ## Fazit
 <!--- Reflektion: Haben Sie erreicht, was sie wollten? Ist Ihr Ergebnis hilfreich?
