@@ -27,7 +27,7 @@ Gegliedert wird die Darstellung in eine Übersichts-, sowie eine Diagrammansicht
 Dieses kleine Datenvisualisierungsprojekt ist im Rahmen des Wintersemesters 2016/2017 entstanden. Ziel war es eine Interaktive Datenvisualisierung zum Thema Smart City und Urbanen Räumen.
 Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptidee unseres Dozenten Herr Prof. Dr. Nagel auf, Parks und Parkplätze der Stadt Zürich in Relation zu setzen und festzustellen ob eine gewisse Verteilung zu erkennen ist.
 
-##Funktionalitäten:
+## Funktionalitäten:
 Die Übersichtskarte (A) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht (B) dargestellt werden.
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
 
@@ -59,7 +59,7 @@ Erste Exploration und zusammenstellung der gefundenen Daten erfolge in [QGIS](ht
 Die folgenden Bilder zeigen zwei unsere frühen Explorationen und Zusammenstellungen der von uns verwendeten Daten.
 
 <figure>
-  <img src="{{ site.urlimg }}/ZuerichParkflaechen/QGIS_Bezirke_GruenUndWaldflaechen.jpg" />
+  <img src="{{ site.urlimg }}/ZuerichParkflaechen/QGIS_Bezirke_GruenUndWaldflaechen.JPG" />
   <figcaption >Eine frühe Zusammenstellung, nur mit den Bezirken Zürichs und den Daten der Grünflächen</figcaption>
 </figure>
 
