@@ -82,7 +82,9 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 <!--Was haben Sie herausgefunden? Können Sie ein/zwei Aussagen oder Stories hervorheben?-->
 
 ### Implementierung
+
 #### Verwendete Tools/Libraries:
+
 - Java Processing
 
 - Unfolding Maps für die Karten
