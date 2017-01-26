@@ -10,7 +10,7 @@ categories:
     - projects
 image:
     title: ZuerichParkflaechen/zp_teaser.jpg
-    caption: Teaser
+    caption: Übersicht 
 author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp, Mihkail Polishuk
 ---
 
@@ -25,10 +25,12 @@ Gegliedert wird die Darstellung in eine Übersichts-, sowie eine Diagrammansicht
 - Konzept: Was ist die Grundidee, Hauptfrage, wichtigste Hypothese?-->
 
 Dieses kleine Datenvisualisierungsprojekt ist im Rahmen des Wintersemesters 2016/2017 entstanden. Ziel war es eine Interaktive Datenvisualisierung zum Thema Smart City und Urbanen Räumen.
+
 Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptidee unseres Dozenten Herr Prof. Dr. Nagel auf, Parks und Parkplätze der Stadt Zürich in Relation zu setzen und festzustellen ob eine gewisse Verteilung zu erkennen ist.
 
 ## Funktionalitäten:
 Die Übersichtskarte (A) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht (B) dargestellt werden.
+
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
 
 Bei fehlender Selektion oder Auswahl eines einzelnen Bezirkes wird in der rechten Spalte gesamt Zürich zum Vergleich eingeblendet.
@@ -75,12 +77,22 @@ Die folgenden Bilder zeigen zwei unsere frühen Explorationen und Zusammenstellu
   <figcaption >Zusammenstellung aller von uns verwendeten Daten in QGIS</figcaption>
 </figure>
 
-
 <!--## Prototyp / Ergebnisse
 Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 
 ### Visualisierung
 <!--Ergebnisse, Design, Prototyp. Darstellungen echter oder ausgewählter Daten.-->
+
+### Fragen
+Wir untersuchten folgende Fragen:
+
+- Wie ist die Relation der Grünflächen zu den Parkplätzen in Zürich?
+
+- Inwiefern weichen einzelne Bezirke vom Gesamtdurchschnitt ab?
+
+- Gibt es Tendenzen und Abweichungen am Stadtrand oder im Zentrum?
+
+- Gibt es andere interessante Auffälligkeiten?
 
 ### Erkenntnisse
 <!--Was haben Sie herausgefunden? Können Sie ein/zwei Aussagen oder Stories hervorheben?-->
@@ -112,11 +124,16 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen: -->
 
 
 #### Probleme bei der Implementierung:
+
 - Processing und die anderen genutzten Bibliotheken und Tools waren neu für uns, dementsprechend mussten wir viel Zeit für die Einarbeitung aufwenden.
+
 - Sehr viele Daten, allein die Parkplätze umfassten ~50.000 einzelne Datenpunkte.
 demensprechend hatten wir mit einigen Performanceproblemen zu kämpfen.
+
 - Eigene Marker für die Maps erstellen, wir entschieden uns schlussendlich von uns angefertigte Icons zu verwenden.
+
 - Die Flächen der Polygone die wir aus Overpass Turbo generierten, konnten wir aufgrund von Fehlern im Aufbau der dort eingetragenen Daten nicht korrekt berechnen.
+
 - Wälder die außerhalb eines Bezirks liegen werden mit zum Bezirk gezählt.
 
 
@@ -135,4 +152,5 @@ function setup() {
 nächste Schritte sein?-->
 
 - Processing in Kombination mit Unfolding Maps bietet vielseitige Möglichkeiten, da diese jedoch auf Java aufbauen, treten bei sehr großen Datenmengen enorme Performance einbrüche auf. 
+
 - Wir konnten wie erhofft die Grünflächen und Parkplätze leicht verständlich veranschaulichen.
