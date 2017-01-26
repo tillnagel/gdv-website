@@ -53,15 +53,27 @@ Die Diagrammansicht (C) stellt die Gesamtflächen der visualisierten Bezirke dem
 
 ## Daten / Auswertung
 
-### Daten
-<!--Quellen, Erhebung, Parsing, Aggregation, ...-->
-
-Genutzte Datenquellen:
+### Datenquellen
+Wir haben folgende Datenquellen genutzt:
 
 - [Opendata Projekt der Grünstadt Zürich](https://data.stadt-zuerich.ch/)
 
 - [Overpass Turbo](https://overpass-turbo.eu/) ein Datenfilterungs Tool für [OpenStreetMap](http://openstreetmap.org/)
 
+### Daten
+Aus den oben genannten Datenquellen haben wir dann die folgenden Datensätze zusammengetragen und kombiniert:
+
+- Grünflächen: Zusammengesetzt aus Parks und Picknickplätzen von data.stadt-zuerich.ch sowie Grünflächen, Parks und Grasflächen von overpass-turbo.eu
+
+- Waldflächen: Aggregiert aus verschiedenen Wald- bzw. Waldflächen Datensätzen von overpass-turbo.eu
+
+- Parkplätze: Von data.stadt.zuerich.ch , die Parkplätze unterteilen sich dabei noch in mehrere Unterkategorien:
+        - Weisse Parkplätze: Parkplätze auf denen man mit Parkuhr bis zu 30 Minuten und in manchen Fällen bis zu 4 Stunden parken darf.
+        - Blaue Parkplätze: Parkplätze für die man sogenannte "Parkkarten" benötigt.
+        - Taxi Parkplätze
+        - Behinderten Parkplätze
+        - Lieferparkplätze
+        
 ### Probleme bei den Datenquellen
 Leider mussten wir feststellen dass trotz Kombination unserer beiden Datenquellen, die Daten nicht vollständig waren.
 
