@@ -26,7 +26,7 @@ Gegliedert wird die Darstellung in eine Übersichts-, sowie eine Diagrammansicht
 Dieses kleine Datenvisualisierungsprojekt ist im Rahmen des Wintersemesters 2016/2017 entstanden. Ziel war es eine Interaktive Datenvisualisierung zum Thema Smart City und Urbanen Räumen.
 Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptidee unseres Dozenten Herr Prof. Dr. Nagel auf, Parks und Parkplätze der Stadt Zürich in Relation zu setzen und festzustellen ob eine gewisse Verteilung zu erkennen ist.
 
-##Funktionalitäten:
+## Funktionalitäten:
 Die Übersichtskarte (A) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht (B) dargestellt werden.
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
 
@@ -73,7 +73,7 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen:
 <!--Was haben Sie herausgefunden? Können Sie ein/zwei Aussagen oder Stories hervorheben?-->
 
 ### Implementierung
-####Verwendete Tools/Libraries:
+#### Verwendete Tools/Libraries:
 - Java Processing
 - Unfolding Maps für die Karten
 - GiCentre für Diagramme
@@ -84,7 +84,7 @@ Hier sind einige unserer Prototypen und Entwicklungsschritte zu sehen:
 - - -
 
 
-####Probleme bei der Implementierung:
+#### Probleme bei der Implementierung:
 - Processing und die anderen genutzten Bibliotheken und Tools waren neu für uns, dementsprechend mussten wir viel Zeit für die Einarbeitung aufwenden.
 - Sehr viele Daten, allein die Parkplätze umfassten ~50.000 einzelne Datenpunkte.
 demensprechend hatten wir mit einigen Performanceproblemen zu kämpfen.
