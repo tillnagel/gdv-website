@@ -59,7 +59,7 @@ Erste Exploration und zusammenstellung der gefundenen Daten erfolge in [QGIS](ht
 Die folgenden Bilder zeigen zwei unsere frühen Explorationen und Zusammenstellungen der von uns verwendeten Daten.
 
 <figure>
-  <img src="{{ site.urlimg }}/ZuerichParkflaechen/QGIS_Bezirke_GrünUndWaldflaechen.jpg" />
+  <img src="{{ site.urlimg }}/ZuerichParkflaechen/QGIS_Bezirke_GruenUndWaldflaechen.jpg" />
   <figcaption >Eine frühe Zusammenstellung, nur mit den Bezirken Zürichs und den Daten der Grünflächen</figcaption>
 </figure>
 
