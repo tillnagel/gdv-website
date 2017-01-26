@@ -67,12 +67,12 @@ Aus den oben genannten Datenquellen haben wir dann die folgenden Datensätze zus
 
 - Waldflächen: Aggregiert aus verschiedenen Wald- bzw. Waldflächen Datensätzen von overpass-turbo.eu
 
-- Parkplätze: Von data.stadt.zuerich.ch , die Parkplätze unterteilen sich dabei noch in mehrere Unterkategorien:
-        - Weisse Parkplätze: Parkplätze auf denen man mit Parkuhr bis zu 30 Minuten und in manchen Fällen bis zu 4 Stunden parken darf.
-        - Blaue Parkplätze: Parkplätze für die man sogenannte "Parkkarten" benötigt.
-        - Taxi Parkplätze
-        - Behinderten Parkplätze
-        - Lieferparkplätze
+* Parkplätze: Von data.stadt.zuerich.ch , die Parkplätze unterteilen sich dabei noch in mehrere Unterkategorien:
+    * Weisse Parkplätze: Parkplätze auf denen man mit Parkuhr bis zu 30 Minuten und in manchen Fällen bis zu 4 Stunden parken darf.
+    * Blaue Parkplätze: Parkplätze für die man sogenannte "Parkkarten" benötigt.
+    * Taxi Parkplätze
+    * Behinderten Parkplätze
+    * Lieferparkplätze
         
 ### Probleme bei den Datenquellen
 Leider mussten wir feststellen dass trotz Kombination unserer beiden Datenquellen, die Daten nicht vollständig waren.
