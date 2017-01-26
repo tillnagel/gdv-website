@@ -2,7 +2,6 @@
 layout: page
 title:  "Zürich Parkflächen"
 subheadline: Veranschaulichung und Exploration der Züricher Natur und Parkplätze 
-
 teaser: "Vergleich von Natur und Parkplätzen in der Grünstadt Zürich"
 header: no
 show_meta: false
