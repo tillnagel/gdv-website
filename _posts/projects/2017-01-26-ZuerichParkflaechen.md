@@ -32,7 +32,7 @@ Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptide
 
 
 ## Funktionalitäten:
-Die Übersichtskarte ![(*A*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_A.png) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht ![(*B*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_B.png) dargestellt werden.
+Die Übersichtskarte <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_A.png" alt="(A)" height="20" width="20" /> erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht ![(*B*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_B.png) dargestellt werden.
 
 
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
