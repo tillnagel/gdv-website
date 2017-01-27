@@ -49,18 +49,18 @@ Wir haben folgende Datenquellen genutzt:
 ### Daten
 Aus den oben genannten Datenquellen haben wir folgenden Datensätze zusammengetragen und kombiniert:
 
--   Grünflächen:
+-   Grünflächen:  
     Zusammengesetzt aus [Parks](https://data.stadt-zuerich.ch/dataset/park) und [Picknickplätzen](https://data.stadt-zuerich.ch/dataset/picknickplatz) von Open Data Zürich, sowie Grünflächen, Parks und Grasflächen von Overpass Turbo.
 
--   Waldflächen:
+-   Waldflächen:  
     Aggregiert aus verschiedenen Wald- bzw. Waldflächen-Datensätzen von Overpass Turbo.
 
--   Parkplätze:
+-   Parkplätze:  
     Von Open Data Zürich - die Parkplätze unterteilen sich dabei in mehrere Unterkategorien:
 
-    -   Weisse Parkplätze:
+    -   Weisse Parkplätze:  
         Begrenzte Parkdauer mit Parkuhr von bis zu 30 Minuten und in manchen Fällen bis zu 4 Stunden.
-    -   Blaue Parkplätze:
+    -   Blaue Parkplätze:  
         Voraussetzung sind sogenannte "Parkkarten".
     -   Taxiparkplätze
     -   Behindertenparkplätze
@@ -85,8 +85,6 @@ Die folgenden Bilder zeigen zwei unserer frühen Explorationen und Zusammenstell
   <figcaption >Zusammenstellung aller von uns verwendeten Daten in QGIS.</figcaption>
 </figure>
 
-### Visualisierung
-
 ### Fragen
 Wir untersuchten folgende Fragen:
 
@@ -98,7 +96,15 @@ Wir untersuchten folgende Fragen:
 ### Erkenntnisse
 -   Zunahme der Grünflächen in Richtung der Stadtgrenzen.
 -   Parks scheinen sich auf das Zentrum Zürichs zu konzentrieren.
+<figure>
+  <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_gruenflaechen.png" />
+  <figcaption >Verteilung der Grünflächen in Zürich.</figcaption>
+</figure>
 -   Überwiegend zeitbegrenzte Parkplätze im Stadtkern Zürichs.
+<figure>
+  <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_parkplaetze.png" />
+  <figcaption >Verteilung der Parkplätze im Stadtkern Zürichs.</figcaption>
+</figure>
 -   In der Nähe der Grünflächen gibt es zwar viele Parkplätze, die Mehrheit davon ist aber zeitbegrenzt.
 -   Es gibt etwa doppelt so viele kostenpflichtige wie zeitbegrenzte Parkmöglichkeiten.
 
