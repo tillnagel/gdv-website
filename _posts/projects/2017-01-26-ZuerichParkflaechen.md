@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Zürich Parkflächen"
+title:  "Züricher Parkflächen"
 subheadline: Veranschaulichung und Exploration der Züricher Natur und Parkplätze 
 
 teaser: "Vergleich von Natur und Parkplätzen in der Grünstadt Zürich"
@@ -9,7 +9,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: ZuerichParkflaechen/zp_teaser.jpg
+    title: ZuerichParkflaechen/zp_teaser.png
     caption: Übersicht 
 author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp, Mihkail Polishuk
 ---
@@ -25,14 +25,14 @@ Gegliedert wird die Darstellung in eine Übersichts-, sowie eine Diagrammansicht
 <!--- Einführung: Was ist die Motivation hinter Ihrem Projekt?
 - Konzept: Was ist die Grundidee, Hauptfrage, wichtigste Hypothese?-->
 
-Dieses kleine Datenvisualisierungsprojekt ist im Rahmen des Wintersemesters 2016/2017 entstanden. Ziel war es eine Interaktive Datenvisualisierung zum Thema Smart City und Urbanen Räumen.
+Dieses kleine Datenvisualisierungsprojekt ist im Rahmen der Vorlesung "Grundlagen der Datenvisualisierung" im Wintersemester 2016/2017 entstanden. Ziel war eine interaktive Datenvisualisierung zum Thema Smart City und Urbanen Räumen.
 
 
-Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptidee unseres Dozenten Herr Prof. Dr. Nagel auf, Parks und Parkplätze der Stadt Zürich in Relation zu setzen und festzustellen ob eine gewisse Verteilung zu erkennen ist.
+Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptidee unseres Dozenten Herr Prof. Dr. Nagel auf, Parks und Parkplätze der Stadt Zürich in Relation zu setzen und festzustellen, ob besondere Ausprägungen zu erkennen sind.
 
 
 ## Funktionalitäten:
-Die Übersichtskarte (A) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht (B) dargestellt werden.
+Die Übersichtskarte ![(*A*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_A.png) erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht ![(*B*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_B.png) dargestellt werden.
 
 
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
@@ -41,7 +41,7 @@ Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (ob
 Bei fehlender Selektion oder Auswahl eines einzelnen Bezirkes wird in der rechten Spalte gesamt Zürich zum Vergleich eingeblendet.
 
 
-Die Diagrammansicht (C) stellt die Gesamtflächen der visualisierten Bezirke dem Züricher Absolut und Durchschnitt gegenüber.
+Die Diagrammansicht ![(*C*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_C.png) stellt die Gesamtflächen der visualisierten Bezirke dem Züricher Absolut und Durchschnitt gegenüber.
 
 
 <figure>
