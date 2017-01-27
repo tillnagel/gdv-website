@@ -32,7 +32,7 @@ Nach einiger Recherche zu verfügbaren Datenquellen, griffen wir eine Konzeptide
 
 
 ## Funktionalitäten:
-Die Übersichtskarte <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_A.png" alt="(A)" style="width: 20px; height: 20px;" /> erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht ![(*B*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_B.png) dargestellt werden.
+Die Übersichtskarte <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_A.png" alt="(A)" style="width: 20px; height: 20px;" /> erlaubt das einfache Selektieren von bis zu zwei Bezirken, die in den jeweiligen Spalten zur Detailansicht <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_B.png" alt="(B)" style="width: 20px; height: 20px;" /> dargestellt werden.
 
 
 Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (oben) und die verschiedenen Parkplatzarten (unten), die jeweils gefiltert werden können.
@@ -41,7 +41,7 @@ Diese zeigen jeweils in zwei übereinanderliegenden Panels die Grünflächen (ob
 Bei fehlender Selektion oder Auswahl eines einzelnen Bezirkes wird in der rechten Spalte gesamt Zürich zum Vergleich eingeblendet.
 
 
-Die Diagrammansicht ![(*C*)]({{ site.urlimg }}/ZuerichParkflaechen/zp_C.png) stellt die Gesamtflächen der visualisierten Bezirke dem Züricher Absolut und Durchschnitt gegenüber.
+Die Diagrammansicht <img src="{{ site.urlimg }}/ZuerichParkflaechen/zp_C.png" alt="(C)" style="width: 20px; height: 20px;" /> stellt die Gesamtflächen der visualisierten Bezirke dem Züricher Absolut und Durchschnitt gegenüber.
 
 
 <figure>
