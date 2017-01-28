@@ -105,7 +105,7 @@ Um den Zusammenhang zwischen Radwegen und Einwohner darzustellen, sind verschied
 Interaktionsmöglichkeiten: Hover und Auswahl der Quartiere über Scatterplot und Choropleth
 
 <figure>
-  <img src="{{ site.urlimg }}/radwegezuerich/bilbid.png" />
+  <img src="{{ site.urlimg }}/radwegezuerich/tool_final.png" />
 </figure>
 
 ## Resümee und Ausblick 
