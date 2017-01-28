@@ -1,0 +1,194 @@
+---
+layout: page
+title:  "INTERBUS"
+subheadline: Reisen zwischen Herkunft und Heimat
+teaser: "Dieses Markdown-Template zeigt einige Möglichkeiten für die Projektdokumentation"
+header: no
+show_meta: false
+categories:
+    - projects
+image:
+    title: interbus/teaser.jpg  640x360px
+    caption: Teaser
+author: Philip Dombrowski, Markus Frindt, Josua Geiger, Nicole Mrasek, Lisa Rudolf
+---
+
+Unser Projekt hatte zum Ziel einen möglichen Zusammenhang zwischen in Mannheim angebotenen Fernbusverbindungen und der Herkunft der Mannheimer Bürger zu untersuchen und die daraus entstandenen Ergebnisse zu visualisieren. Als Grundlage dieser Visualisierungsversuche wurden von uns über einen Monat die Daten aller Fernbusverbindungen, die aus Mannheim starten aufgezeichnet. Wir haben uns dazu entschieden, die vier häufigsten Herkunftsländer in Mannheim gesondert zu betrachten. Bei der von uns getroffenen Auswahl der mit einbezogenen Städte waren die Hauptkriterien die Einwohnerzahl, eine Bedeutung als Urlaubsort oder eine Rolle als Verkehrsknotenpunkt in der jeweiligen Region. Insgesamt belief sich die Auswahl schlussendlich auf 133 Städte in 31 Ländern und es wurden 6160 angebotene Fahrten erfasst. 
+
+
+
+
+## Einführung / Konzept
+- Einführung: Was ist die Motivation hinter Ihrem Projekt?
+- Konzept: Was ist die Grundidee, Hauptfrage, wichtigste Hypothese?
+
+Durch die gute Verkehrsanbindung Mannheims an Fernverkehrsstrecken und seine relativ zentrale Lage in Europa eignet sich die Stadt besonders gut als Ausgangspunkt für Reisen mit dem Fernbus, was sich bereits in einem breiten Angebot an Fahrten äußert. Gibt es aber einen Zusammenhang zwischen den angebotenen Fernbusverbindungen und der Herkunft der Mannheimer Bürger? Gibt es häufiger Verbindungen in Länder, die potentiell für Heimatbesuche prädestiniert sind, oder spielen solche lokalen Faktoren vielleicht gar keine Rolle bei der Planung des Fahrtenangebots? 
+
+Wir haben versucht, diese Fragestellungen mit Hilfe der tatsächlich angebotenen Fernbusverbindungen zu untersuchen und die daraus entstandenen Ergebnisse zu visualisieren. 
+
+## Daten
+
+### Quellen
+Als einzige Datenquelle haben wir die Meta-Suche für Busverbindungen [CheckMyBus](http://www.checkmybus.de) genutzt. Leider bietet [CheckMyBus](http://www.checkmybus.de) keine Schnittstelle an. 
+### Erhebung
+Um trotz fehlender Schnittstelle an Daten zu kommen haben wir einen eigenen Crawler in NodeJS implementiert. 
+
+Bevor jedoch die Daten erhoben werden konnten, mussten Zielstation innerhalb Europas festgelegt werden. Im Endeffekt belief es sich dann auf 133 Ziele, wobei wir auf eine gleichmäßige Verteilung innerhalb Europas geachtet haben. Zu den Geodaten eines einzelnen Ziels haben wir noch zusätzlich Informationen beigefügt, die für die spätere Visualisierung eventuell von Nützen sein konnten.
+
+Hier ein Beispiel für das Datenschema eines einzelnen Ziels:
+```javascript
+{
+    "NameTo":"Prag, Tschechische Republik",
+    "LatitudeTo":50.0755381,
+    "LongitudeTo":14.43780049999998,
+    "CountryCode":"CZE",
+    "DistanceRoute":517,
+    "IsCapitalCity":true,
+    "Population":1247000
+}
+```
+Die Zeitspanne, für die wir die Fernbusverbindungen zu den einzelnen Stationen erhoben haben, war vom 16.12.2016 - 13.01.2017. Wir einigten uns für nur einen Monat, weil wir uns dann sicher sein konnten, dass die Daten stimmig waren. 
+
+Um uns keinen Ärger mit [CheckMyBus](http://www.checkmybus.de) einzuhandeln implementierten wir den Crawler so, dass er zwischen jedem Request 3 Sekunden wartet. Aufgrund dieser Netiquette dauerte die Datenerhebung ca. 4 Stunden. Als Ergebnis der Erhebung hatten wir dann eine 3 MB große JSON-Datei mit den einzelnen Verbindungen.
+
+Hier nochmal ein Beispiel einer einzelnen Verbindung, um zu veranschaulichen, mit welcher Basis weiter gearbeitet werden konnte.
+
+```javascript
+{
+    "originCityName":"Mannheim",
+    "originStationName":"Mannheim ZOB Hbf",
+    "destinationCityName":"Prag",
+    "destinationStationLatitude":50.083637,
+    "destinationStationLongitude":14.434639,
+    "destinationStationName":"Prag Hbf",
+    "companyName":"FlixBus",
+    "arrival":"21:35",
+    "durationInMinutes":1395,
+    "departureDateTime":"2016-12-15T22:20:00",
+    "distanceBeeline":433,
+    "distanceRoute":517,
+    "isCapitalCity":true,
+    "population":1247000
+}
+```
+
+### Bereinigung
+Zur ersten Explorierung haben wir die Daten mit Tableau visualisiert. Bei der Explorierung ist uns aufgefallen, dass der minimal notwendige Suchradius von 5km zu Problemen geführt hat. Das Ergebnis beinhaltete nämlich auch Stationen, die in einem 5km Radius zum definierten Ziel lagen.
+
+Deshalb haben wir den Crawler um eine "Bereinigungs" funktioniert ergänzt. Diese Bereinigungsfunktion entfernte alle Ergebnisse, die nicht mit unseren zuvor definierten Zielen übereinstimmten. 
+
+--> bild vom cleaner auf der cmd ←
+
+### Aggregierung
+Da wir bei den Visualisierungen jedoch Anzahl der Verbindungen zu einem bestimmten Ziel bzw. in ein Land anzeigen wollten, mussten wir die Daten noch aggregieren. Die Aggregierungsfunktionen implementierten wir auch jeweils mit NodeJS. Damit hatten wir die Daten nun in einem Format, das wir einfach und ohne zusätzlichen Aufwand für die Visualisierungen verwenden konnten.
+
+
+### Gestaltungsprozess / Prototypen
+Sinnvolle Auswahl relevanter Experimente.
+
+<figure>
+  <img src="{{ site.urlimg }}/interbus/sketch_1.png" />
+   <figcaption >Sketches #1</figcaption>
+</figure>
+<figure>
+  <img src="{{ site.urlimg }}/interbus/sketch_2.png" />
+   <figcaption >Sketches #2</figcaption>
+</figure>
+<figure>
+  <img src="{{ site.urlimg }}/interbus/sketch_3.png" />
+   <figcaption >Fahrtenradar</figcaption>
+</figure>
+<figure>
+  <img src="{{ site.urlimg }}/interbus/sketch_4.png" />
+   <figcaption >Skizze 2</figcaption>
+</figure>
+
+## Ergebnisse
+
+### Visualisierung
+Ergebnisse, Design, Prototyp. Darstellungen echter oder ausgewählter Daten.
+
+
+
+### Fahrtenradar
+
+<figure>
+ <a href="http://psydelix.de/interbus/" target="_blank">
+ <img src="{{ site.urlimg }}/interbus/radar_final.png" /></a>    
+   <figcaption >Fertige Version</figcaption>
+</figure>
+
+gallery:
+    - image_url: radar_1.jpeg
+       caption: 1. Version des Radar mit echten Daten
+    - image_url: radar_2.png
+       caption: Label hinzugefügt (Stadt, Land)
+    - image_url: radar_3.jpeg
+       caption: 
+
+### Fahrtenverlauf
+
+
+<figure>
+ <a href="http://psydelix.de/interbus/interbus_poster.pdf" target="_blank">
+ <img src="{{ site.urlimg }}/interbus/stream_1.png" /></a>    
+   <figcaption >Erste Visualisierung</figcaption>
+</figure>
+
+<figure>
+ <a href="http://psydelix.de/interbus/interbus_poster.pdf" target="_blank">
+ <img src="{{ site.urlimg }}/interbus/stream_final.png" /></a>    
+   <figcaption >Fertige Version</figcaption>
+</figure>
+
+### Bevölkerungsübersicht
+
+<figure>
+  <img src="{{ site.urlimg }}/interbus/pie_charts.png" />
+   <figcaption >Die beiden Diagramme links wurden zu einem Zusammengefasst</figcaption>
+</figure>
+
+### Poster
+<figure>
+ <a href="http://psydelix.de/interbus/interbus_poster.pdf" target="_blank">
+ <img src="{{ site.urlimg }}/interbus/poster.jpeg" /></a>    
+   <figcaption >Poster für die iExpo (PDF) 1.1 MB</figcaption>
+</figure>
+
+### Erkenntnisse
+Insgesamt wurden im Rahmen dieses Projekts, über einen Zeitraum von 4 Wochen, 6160 Verbindungen in 133 Städte erfassst und ausgewertet. Aufgrund der zentralen Lage Mannheims, ist die Aufteilung der angefahrenen Städte innerhalb Europas gleichmäßig.
+
+Sehr auffällige ist, dass die meisten Fahrten in einem Radius von 1050km verlaufen. Bezogen auf unsere These, ob der Migrationshintergrund der Mannheimer Bevölkerung einen Einfluss auf die Fernbusverbindungen hat, lässt sich anhand der erfassten Daten, keinerlei Aussage treffen.
+
+Des Weiteren wird die intuitive Annahme bestätigt, dass sich eine Häufung an Fahrten vor und nach den Feiertagen (Weihnachten, Neujahr und Heilige-Drei-Könige) feststellen lässt.
+
+### Implementierung
+Wie haben Sie die Visualisierung umgesetzt? Welche Tools haben Sie für welche Schritte eingesetzt?
+
+Verlauf des "Radar" als Grafik einbinden, weil programmiert
+
+```javascript
+function setup() {
+  Data data = loadData();
+  doSomeVisualization(data);
+}
+```
+
+#### Verwendete Tools
+
+- JavaScript [Data-Driven-Documents](https://www.d3js.org) (D3) Bibliothek
+- [P5js](https://p5js.org/)
+- [Bootstrap](http://getbootstrap.com/)
+- [IntelliJ IDE](https://www.jetbrains.com/idea/)
+- [GitHub](https://www.github.com)
+
+
+## Fazit
+- Reflektion: Haben Sie erreicht, was sie wollten? Ist Ihr Ergebnis hilfreich?
+- Ausblick: Welche weiteren Ideen haben Sie? Was könnten interessante
+nächste Schritte sein?
+
+Wir haben unser Ziel erreicht --> untersucht ob es einen Zusammenhang gibt oder nicht. 
+Zumindest für den ausgewählten Zeitraum ist dies nicht der Fall
+
+Ausblick:
