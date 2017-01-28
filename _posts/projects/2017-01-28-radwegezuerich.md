@@ -8,7 +8,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: /radwegezuerich/wr-teaser.png
+    title: radwegezuerich/wr-teaser.png
 author: Hunar Mawlod &amp; Giang Pham &amp; Timon Vogler &amp; Mahmoud Abou El Azm
 ---
 
