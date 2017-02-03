@@ -22,13 +22,13 @@ Ein Zusammenhang zwischen Radwegen und Einwohnerzahl wird vielleicht auf den ers
 Mit diesem Projekt wurde das Verhältnis zwischen Radweglänge und die Einwohnerzahl der jeweiligen Quartiere untersucht. Die Antworten und Erkenntnisse sind auf verschiedenen Arten visuell dargestellt worden.
 
 Hinweis:
-In den Daten gab es sowohl Radwege als auch Radstreifen. Radstreifen sind auf der Straße eingezeichnete Wege, wobei Radwege getrennt von der Strasse sind und eigens für Fahrräder gebaut sind. In diesem Projekt wurde jedoch festgelegt, dass nicht qualitativ zwischen Radwegen und Radstreifen unterschieden wird. Außerdem umfasst in den folgenden Abschnitten das Wort „Radwege“ die „Radwege und Radstreifen“.
+In den Daten gab es sowohl Radwege als auch Radstreifen. Radstreifen sind auf der Straße eingezeichnete Wege, wobei Radwege getrennt von der Strasse verlaufen und eigens für Fahrräder gebaut sind. In diesem Projekt wurde jedoch festgelegt, dass nicht qualitativ zwischen Radwegen und Radstreifen unterschieden wird. Außerdem umfasst in den folgenden Abschnitten das Wort „Radwege“ die „Radwege und Radstreifen“.
 
-Die Motivation des Projekts war zum einen, dass wir die Möglichkeit hatten mit neuen Visualisierungstools zu arbeiten und die Idee, die wir zu unserem Projekt hatten visuell darzustellen.
+Die Motivation des Projekts war, dass wir die Möglichkeit hatten mit neuen Visualisierungstools zu arbeiten und dadurch unser Projekt visuell darzustellen zu können.
 
 Die These die von uns aufgestellt worden ist lautet:
 Je mehr Einwohner in einem Quartier wohnen, desto mehr Radwege gibt es auch. Außerdem haben wir uns die Frage gestellt, ob die Einwohnerzahl der Quartiere einen Zusammenhang mit der Länge der Radwege hat?
-Diese These sollte bestätigt oder widerlegt werden.Die Vermutung hat sich größtenteils bestätigt, dass es tatsächlich einen Zusammenhang zwischen Einwohnerzahl und Radweglänge gibt, wobei es auch Quartiere gibt, die aus dem Muster fallen.
+Diese These sollte bestätigt oder widerlegt werden. Die Vermutung hat sich größtenteils bestätigt, dass es tatsächlich einen Zusammenhang zwischen Einwohnerzahl und Radweglänge gibt, wobei es auch Quartiere gibt, die aus dem Muster fallen.
 
 ## Daten / Auswertung
 
@@ -36,6 +36,7 @@ Die Informationen zu den Radwegen und Quartieren stammen aus dem [Open Data Port
 https://data.stadt-zuerich.ch)
 
 Folgende Daten standen in dem Open Data Portal zur Verfügung:
+
 * Geokoordinaten der Quartiere (Stadtteile von Zürich)
 * Geokoordinaten der Radwege
 * Einwohnerzahl der Quartiere
@@ -44,8 +45,8 @@ Die Gesamtlänge der Radwege in den einzelnen Quartieren waren nicht in den Date
 Die selbst ausgerechneten Daten und die aus den anderen Dateien wurden dann zu einer Datei zusammengefasst.
 
 ## Prototyp / Ergebnisse
-### Visualisierung
-Die erste Visualisierungen fanden mit QGIS statt. Durch QGIS gab es eine Übersicht der Quartieren mit den eingezeichneten Radwegen.
+
+Die erste Visualisierungen fanden mit QGIS statt. Durch QGIS gab es eine Übersicht der Quartiere mit den eingezeichneten Radwegen.
 
 <figure>
   <img src="{{ site.urlimg }}/radwegezuerich/blau.png" />
@@ -67,15 +68,15 @@ Wie im obigen Diagramm zu erkennen, hängt die Radweglänge tatsächlich mit der
 
 ### Erkenntnisse
 
-Interessant sind die Quartiere Escher Wyss und Enge, die man als Ausreisser bezeichnen kann, da sie vom Muster abweichen.
+Interessant sind die Quartiere Escher Wyss und Enge, die man als Ausreißer bezeichnen kann, da sie vom Muster abweichen.
 
-Beim Quartier Escher-Wyss handelt es sich um ein Industriegebiet, das  auch viele öffentliche Gebäuden wie Museen, Theater und Hotels besitzt.
+Beim Quartier Escher-Wyss handelt es sich um ein Industriegebiet, das auch viele öffentliche Gebäuden wie Museen, Theater und Hotels besitzt. Was bedeutet, dass die Einwohnerzahl dadurch geringer ist. Die Radwege wurden aber vermutlich trotzdem gebaut, da die Museen etc. erreicht werden sollen.
 
 <figure>
   <img src="{{ site.urlimg }}/radwegezuerich/escherwyss.png" />
 </figure>
 
-Beim Quartier Enge fällt auf, dass auf der gleichen Straße entlang des Flusses drei Radwege eingezeichnet sind. Es besteht der Verdacht, dass die redundanten Linien in die Berechnungen einflossen. Diese Linien sind in der Mitte der nachfolgenden Abbildung zu sehen.
+Beim Quartier Enge fällt auf, dass auf der gleichen Straße entlang des Flusses drei Radwege eingezeichnet sind. Es besteht der Verdacht, dass die redundanten Linien in die Berechnungen einflossen. Diese Linien sind in der Mitte der nachfolgenden Abbildung zu sehen. 
 
 <figure>
   <img src="{{ site.urlimg }}/radwegezuerich/enge.png" />
@@ -85,12 +86,12 @@ Beim Quartier Enge fällt auf, dass auf der gleichen Straße entlang des Flusses
 
 Um ein interaktives Tool für die Darstellung unserer Ergebnisse zu entwickeln, wurden folgende Tools und Bibliotheken benutzt:
 
-[Eclipse](https://eclipse.org/) - Entwicklungsumgebung für das [Umsetzen des Tools
-[Processing](https://processing.org/) - generell zum umsetzen von Visualisierungen
-[Unfolding](http://unfoldingmaps.org/) - zur Erstellung von interaktiven Karten/Maps
-[giCentre](http://www.gicentre.net/) - Bibliothek für die Erstellung des Scatterplots
-[QGIS](https://www.qgis.org/) - durchführen von Geo-Berechnungen
-[Git](https://github.com/) - um als Gruppe an der Implementierung zu arbeiten
+* [Eclipse](https://eclipse.org/) - Entwicklungsumgebung für das [Umsetzen des Tools
+* [Processing](https://processing.org/) - generell zum Umsetzen von Visualisierungen
+* [Unfolding](http://unfoldingmaps.org/) - zur Erstellung von interaktiven Karten/Maps
+* [giCentre](http://www.gicentre.net/) - Bibliothek für die Erstellung des Scatterplots
+* [QGIS](https://www.qgis.org/) - durchführen von Geo-Berechnungen
+* [Git](https://github.com/) - um als Gruppe an der Implementierung zu arbeiten
 
 ### Ergebnis der Visualisierung
 
@@ -112,4 +113,4 @@ Interaktionsmöglichkeiten: Hover und Auswahl der Quartiere über Scatterplot un
 Es konnte tatsächlich die These belegt werden, dass es einen Zusammenhang zwischen der Einwohnerzahl und der Radweglänge gibt. Durch die Visualisierung, konnten auch unerwartete und interessante Auffälligkeiten entdeckt werden. 
 
 Das Projekt kann weitergeführt werden, indem weitere Faktoren betrachtet werden, die mit der Verteilung der Radwege zusammenhängen könnten.
-Möglichkeiten sind zum Beispiel, dass untersucht wird, ob es mehr Radwege in Quartieren gibt, in denen viele junge Familien oder generell junge Menschen leben. Auch denkbar ist zu prüfen ob mehr Radwege in der Nähe von öffentlichen Gebäuden (Supermärkte, Schulen etc.) existieren.
+Zum Beispiel, dass untersucht wird, ob es mehr Radwege in Quartieren gibt, in denen viele junge Familien oder generell junge Menschen leben. Es ist auch denkbar zu prüfen, ob mehr Radwege in der Nähe von öffentlichen Gebäuden (Supermärkte, Schulen etc.) existieren.
