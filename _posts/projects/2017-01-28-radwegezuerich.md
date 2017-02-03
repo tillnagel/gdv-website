@@ -21,9 +21,6 @@ Ein Zusammenhang zwischen Radwegen und Einwohnerzahl wird vielleicht auf den ers
 ## Einführung / Konzept
 Mit diesem Projekt wurde das Verhältnis zwischen Radweglänge und die Einwohnerzahl der jeweiligen Quartiere untersucht. Die Antworten und Erkenntnisse sind auf verschiedenen Arten visuell dargestellt worden.
 
-Hinweis:
-In den Daten gab es sowohl Radwege als auch Radstreifen. Radstreifen sind auf der Straße eingezeichnete Wege, wobei Radwege getrennt von der Strasse verlaufen und eigens für Fahrräder gebaut sind. In diesem Projekt wurde jedoch festgelegt, dass nicht qualitativ zwischen Radwegen und Radstreifen unterschieden wird. Außerdem umfasst in den folgenden Abschnitten das Wort „Radwege“ die „Radwege und Radstreifen“.
-
 Die Motivation des Projekts war, dass wir die Möglichkeit hatten mit neuen Visualisierungstools zu arbeiten und dadurch unser Projekt visuell darzustellen zu können.
 
 Die These die von uns aufgestellt worden ist lautet:
@@ -40,6 +37,9 @@ Folgende Daten standen in dem Open Data Portal zur Verfügung:
 * Geokoordinaten der Quartiere (Stadtteile von Zürich)
 * Geokoordinaten der Radwege
 * Einwohnerzahl der Quartiere
+
+Hinweis:
+In den Daten gab es sowohl Radwege als auch Radstreifen. Radstreifen sind auf der Straße eingezeichnete Wege, wobei Radwege getrennt von der Strasse verlaufen und eigens für Fahrräder gebaut sind. In diesem Projekt wurde jedoch festgelegt, dass nicht qualitativ zwischen Radwegen und Radstreifen unterschieden wird. Außerdem umfasst in den folgenden Abschnitten das Wort „Radwege“ die „Radwege und Radstreifen“.
 
 Die Gesamtlänge der Radwege in den einzelnen Quartieren waren nicht in den Daten vorhanden, daher mussten die Längen ausgerechnet werden. Dazu wurde das Tool QGIS verwendet, in das die Koordinaten der Radwege und Quartiere importiert wurden.
 Die selbst ausgerechneten Daten und die aus den anderen Dateien wurden dann zu einer Datei zusammengefasst.
