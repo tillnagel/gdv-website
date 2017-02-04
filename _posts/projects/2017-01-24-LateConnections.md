@@ -30,7 +30,7 @@ Zu den Fragen die LateConnections beantwortet gehören unter anderem:
 
 ## Daten
 
-### Daten
+### Datenquellen
 Alle Daten zu den Haltestellen, Streckenverläufen und den Live-Daten kommen von [RNV OpenData](https://opendata.rnv-online.de/datensaetze) bzw. [RNV API](https://opendata.rnv-online.de/startinfo-api).
 Des Weiteren haben wir Historiendaten der Linie 1 von Anfang Dezember 2016 bis Mitte Januar 2017 angelegt.
 
