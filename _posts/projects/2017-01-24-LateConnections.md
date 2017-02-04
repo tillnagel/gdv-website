@@ -14,6 +14,7 @@ author: Manuel Bäuerle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pre
 ---
 
 ## Zusammenfassung
+<div class="flex-video"><iframe width="640" height="360" src="https://www.youtube.com/embed/5QNCZmBAl5M" frameborder="0" allowfullscreen></iframe></div>
 LateConnections ist ein Visualisierungsprojekt, welches zeigt wie uns die Verspätungen der ÖPNV in unserem Bewegungsradius einschränken. Das Projekt wurde an der Hochschule Mannheim, im Rahmen von Prof. Dr. Till Nagel's Vorlesung "Grundlagen der Visualisierung" im WS16/17 entwickelt. Die unterliegenden Daten stammen von den öffentlichen Quellen des RNV. LateConnections bietet Visualisierungen über Live-Verspätungen, Isochrones zur Anzeige eines bestimmbaren Bewegungsradius, sowie die Verknüpfung der Livedaten mit den Isochrones, um einen eingeschränkten Bewegungsradius aufgrund der Verspätungen zu visualisieren. Außerdem zeigt LateConnections die Wahrscheinlichkeit für eine pünktliche oder verspätete Bahn. Durch die zugrunde liegende Karte, inklusive diversen Points of Interests, wird eine Orientierung für den Nutzer ermöglicht. Die Verwendung von Ionic in der Entwicklung erlaubt es LateConnections sowohl als Webseite, als auch als Smartphone App zu fungieren. Das Ergebnis der Arbeit zeigt, dass eine visualisierbare Einschränkung des Bewegungsradius durch Verspätungen der ÖPNV besteht.
 
 
