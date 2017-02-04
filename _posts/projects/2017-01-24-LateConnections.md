@@ -74,7 +74,9 @@ Durchschnittliche Verspätung der Linie 1 lag zum Zeitraum der Projektvorstellun
 Täglicher Zeitverlust durch Visualisierung greifbar gemacht. Wir haben erkannt, dass auch schon kleine Verspätungen eine große Wirkung auf uns haben können.
 
 ### Implementierung
-Bei diesem Projekt wurden verschiedene Technologien zur Erstellung verwendet. Dabei möchten wir 	im Folgenden genauer auf die Aufgaben der eingesetzten Tools eingehen und wie diese verwendet wurden. 
+
+#### Frontend
+Bei diesem Projekt wurden verschiedene Technologien zur Erstellung verwendet. Dabei möchten wir im Folgenden genauer auf die Aufgaben der eingesetzten Tools eingehen und wie diese verwendet wurden. 
 
 Beginnend mit dem Grundgerüst unserer Applikation haben wir Ionic verwendet. Ionic ist ein hybrides Framework zur Erstellung nativer Applikationen für iOS und Android. Vorteil dieser Technologie ist, dass der geschriebene Code mit HTML, CSS und dem Framework AngularJS (ein Framework für JavaScript) ebenso einfach als Webseite verwendet werden kann. Aufgrund der vielseitigen Einsatzmöglichkeiten können demnach alle potenziellen Nutzer angesprochen werden.
 
@@ -86,8 +88,10 @@ Da das Hauptaugenmerk auf den sogenannten „Isochrones“ liegt, wurden wir auf
 
 Mapbox half uns weitere Designvorstellungen für die Karte zu verwirklichen. Anpassung der Farben und der Kartenarten waren damit kein Problem.
 
-Hier der Codeabschnitt der uns die leaflet Karte inklusive der Mapbox-Styles erzeugt:
+Hier der Codeabschnitt der uns die [leaflet](http://leafletjs.com/) Karte inklusive der [Mapbox-Styles](https://www.mapbox.com/showcase/) erzeugt:
+
 ```javascript
+
 map = new L.Map('map', {
 	doubleClickZoom: false,
 	zoomControl: false
@@ -98,10 +102,13 @@ L.control.zoom({position: 'bottomleft'}).addTo(map);
 L.tileLayer('https://api.mapbox.com/styles/v1/2good4u/cixsr1ojr001c2rplwt50xg0s/tiles/256/{z}/{x}/{y}?access_token=OURTOKEN', {
 	maxZoom: 19
 }).addTo(map);
+
 ```
 
-Hier der Codeabschnitt wie mit Hilfe von [r360°]() die Isochrones erzeugt werden:
+Hier der Codeabschnitt wie mit Hilfe von [r360°](https://developers.route360.net/) die Isochrones erzeugt werden:
+
 ```javascript
+
 $scope.showPolygons = function(sourceMarker, walkTime, lateness, type) {
 	var blackOptions = r360.travelOptions();
 	blackOptions.setIntersectionMode('Union');
@@ -129,12 +136,16 @@ $scope.showPolygons = function(sourceMarker, walkTime, lateness, type) {
 	r360.PolygonService.getTravelTimePolygons(travelOptions, function(polygons) {
 		polygonLayer.clearAndAddLayers(polygons, false);
 		polygonLayer.setColors([
-			{ 'time': walkTime, opacity : 0, 'color': '#aa0000' },
+			{ 'time': walkTime, opacity : 0, 'color': '#AA0000' },
 			{ 'time': (walkTime - lateness), opacity : 0.1, 'color': '#CAFF70'},
 		]);
 	});
 }
+
 ```
+
+#### Backend
+kommt
 
 ### Verwendete Technologien
 <figure>
