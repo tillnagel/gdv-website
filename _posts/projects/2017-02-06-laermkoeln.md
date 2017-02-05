@@ -9,7 +9,7 @@ categories:
     - projects
 image:
     title: laermkoeln/teaser.png
-    caption: Teaser
+    caption: Finaler Prototyp
 author: Christine Ernst, Deniz Kaya, Patrick Fruh, Suzy Djomo Kouamou
 ---
 
