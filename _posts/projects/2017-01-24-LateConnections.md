@@ -10,7 +10,7 @@ categories:
 image:
     title: LateConnections/main.png
     caption: Verspätungsansicht
-author: Manuel Bäuerle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pregler &amp; Ugur Tunali
+author: Manuel Bäurle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pregler &amp; Ugur Tunali
 ---
 
 
@@ -70,18 +70,18 @@ Hier eines unserer ersten Scribbles, bei dem wir versucht haben uns vorzustellen
 
 
 ### Erkenntnisse
-Durchschnittliche Verspätung der Linie 1 lag zum Zeitraum der Projektvorstellung im Schnitt bei 16%. 
+Durchschnittliche Verspätung der Linie 1 lag zum Zeitraum der Projektvorstellung im Schnitt bei 16%.
 Täglicher Zeitverlust durch Visualisierung greifbar gemacht. Wir haben erkannt, dass auch schon kleine Verspätungen eine große Wirkung auf uns haben können.
 
 ### Implementierung
 
 #### Frontend
-Bei diesem Projekt wurden verschiedene Technologien zur Erstellung verwendet. Dabei möchten wir im Folgenden genauer auf die Aufgaben der eingesetzten Tools eingehen und wie diese verwendet wurden. 
+Bei diesem Projekt wurden verschiedene Technologien zur Erstellung verwendet. Dabei möchten wir im Folgenden genauer auf die Aufgaben der eingesetzten Tools eingehen und wie diese verwendet wurden.
 
 Beginnend mit dem Grundgerüst unserer Applikation haben wir Ionic verwendet. Ionic ist ein hybrides Framework zur Erstellung nativer Applikationen für iOS und Android. Vorteil dieser Technologie ist, dass der geschriebene Code mit HTML, CSS und dem Framework AngularJS (ein Framework für JavaScript) ebenso einfach als Webseite verwendet werden kann. Aufgrund der vielseitigen Einsatzmöglichkeiten können demnach alle potenziellen Nutzer angesprochen werden.
 
-Um aus unserem Grundgerüst ein erstes Konzept zu entwickeln haben wir Leaflet verwendet. Leaflet bot uns die Möglichkeit, Karten einzubinden und mithilfe der bereitgestellten Funktionalitäten eigene an das Projekt angepasste Funktionen dem Endnutzer anzubieten. Beispiele hierfür sind Setzern der Haltestellen oder das Zeichnen der Linien zwischen der Haltestellen, um nur einige zu nennen. 
-	
+Um aus unserem Grundgerüst ein erstes Konzept zu entwickeln haben wir Leaflet verwendet. Leaflet bot uns die Möglichkeit, Karten einzubinden und mithilfe der bereitgestellten Funktionalitäten eigene an das Projekt angepasste Funktionen dem Endnutzer anzubieten. Beispiele hierfür sind Setzern der Haltestellen oder das Zeichnen der Linien zwischen der Haltestellen, um nur einige zu nennen.
+
 Spannender wird es bei D3. D3 wurde verwendet, um unser Dashboard zu verwirklichen. Das Kreisdiagramm wird von unserer Seite aus nur noch mit Werten gefüllt und zeigt im Anschluss direkt 	ein perfektes Ergebnis an. Mit D3 sind in Zukunft auch viele andere Möglichkeiten der Darstellung gegeben.
 
 Da das Hauptaugenmerk auf den sogenannten „Isochrones“ liegt, wurden wir auf eine API von r360 aufmerksam. Um die API zu verwenden, musste eine Datei eingebunden werden. An unsere GET-Anfragen mussten Koordinaten des Startpunktes und bis zu 3 Zeiten (also Zeitintervalle) angeben. Die Rückgabe war dann ein komplettes Set an Daten zur Erstellung der Isochrones, welche wir lediglich auf der Karte mit Leaflet „gemalt“ haben.
@@ -117,14 +117,14 @@ $scope.showPolygons = function(sourceMarker, walkTime, lateness, type) {
 	blackOptions.setTravelType(type);
 	blackOptions.setServiceKey('OURTOKEN');
 	blackOptions.setServiceUrl('https://service.route360.net/germany/');
-	
+
 	r360.PolygonService.getTravelTimePolygons(blackOptions, function(polygons) {
 		blackLayer.clearAndAddLayers(polygons, false);
 		blackLayer.setColors([
 			{ 'time': walkTime, opacity : 1 },
 		]);
 	});
-	
+
 	var travelOptions = r360.travelOptions();
 	travelOptions.setIntersectionMode('Union');
 	travelOptions.addSource(sourceMarker);
