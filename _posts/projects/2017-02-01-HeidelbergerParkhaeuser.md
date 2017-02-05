@@ -22,6 +22,17 @@ gallery2:
     - image_url: HeidelbergerParkhaeuser/SelectDate.gif
 ---
 
+<style type="text/css">
+pre {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+}
+code {
+    background-color: transparent;
+}
+</style>
+
 # Abstract
 CPU (car park utilization) ist eine vergleichende visuelle Analyse der urbanen Parkhausauslastung in Heidelberg. Ziel des Projektes war es, eventuelle Verhaltensmuster zu identifizieren und neue Erkenntnisse zu gewinnen. Die Resultate wurden anschließend mit unseren Hypothesen verglichen und analysiert. <br/>
 Die Auslastungen werden in drei unterschiedlichen Sichten dargestellt. Diese wurden so gestaltet, dass sie schrittweise von Small Multiples über Stacked Chart hin zur georäumlichen Visualisierung werden. Im Rahmen des Projektes wurde der Zeitraum vom 19.11. bis zum 25.12.2016 betrachtet. 
@@ -51,7 +62,7 @@ Die API lieferte die Daten in JSON-Format, welches wir aus Performancegründen z
 
 * Beispiel für Parkhaus id=3:
 
-```json
+{% highlight json %}
 {
   "id": 3,
   "total": 200,
@@ -60,7 +71,7 @@ Die API lieferte die Daten in JSON-Format, welches wir aus Performancegründen z
   "status": "closed",
   "parkinglocation": 3
 }
-```
+{% endhighlight %}
 
 ### Bereinigung
 Die IDs (bzw. parkinglocation) der Parkhäuser, der API, stimmen nicht mit den Parkhausnummern in der Stadt überein. Das erste Parkhaus in Heidelberg heißt P0, welches in der API die ID 1 hat. Da die ID immer eins größer, als die Nummer des Parkhauses, ist war dieses Problem einfach zu beheben.
