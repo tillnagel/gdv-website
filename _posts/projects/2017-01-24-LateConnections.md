@@ -90,7 +90,7 @@ Mapbox half uns weitere Designvorstellungen für die Karte zu verwirklichen. Anp
 
 Hier der Codeabschnitt der uns die [leaflet](http://leafletjs.com/) Karte inklusive der [Mapbox-Styles](https://www.mapbox.com/showcase/) erzeugt:
 
-```javascript
+{% highlight javascript %}
 
 map = new L.Map('map', {
 	doubleClickZoom: false,
@@ -103,11 +103,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/2good4u/cixsr1ojr001c2rplwt50xg0s/
 	maxZoom: 19
 }).addTo(map);
 
-```
+{% endhighlight %}
 
 Hier der Codeabschnitt wie mit Hilfe von [r360°](https://developers.route360.net/) die Isochrones erzeugt werden:
 
-```javascript
+{% highlight javascript %}
 
 $scope.showPolygons = function(sourceMarker, walkTime, lateness, type) {
 	var blackOptions = r360.travelOptions();
@@ -141,11 +141,34 @@ $scope.showPolygons = function(sourceMarker, walkTime, lateness, type) {
 		]);
 	});
 }
-
-```
+{% endhighlight %}
 
 #### Backend
-kommt
+Da wir auf eine externe API zugreifen haben wir beschlossen ein eigenes Backend zu bauen.
+Dies ermöglicht uns die Anfragen für die Daten die wir benötingen über eine zentrale Stelle
+zu verwalten und zu koordinieren. Dies sorgt für mehr Datenintegrität und reduziert
+außerdem die Last und den Traffic der Anfragen an die fremde API. Es ermöglicht
+uns außerdem Anfragen bei uns zwischenzuspeichern und dadurch doppelte Anfragen
+zu verhindern. Außerdem haben wir hier die Möglichkeit die Live- und Verspätungsdaten
+entsprechend der Anforderungen unserer Applikation aufzubereiten.
+
+Zur Implementierung des Backends wurde Ruby mit der neusten Version des Rails Web-Frameworks eingesetzt.
+Durch den MVC-basierten Ansatz war es möglich die Datenstruktur flexibel über Models abzubilden
+und sauber über einen API-Controller als REST-Schnittstelle zur Verfügung zu stellen.
+Als Format zur Übertragung der Daten kam der JSON-Standard zum Einsatz.
+
+Eine Anfrage für den aktuellen Live-Haltestellenmonitor sieht zum Beispiel so aus:
+
+{% highlight code %}
+  GET /api/v1/live_monitor/:stop_id
+{% endhighlight %}
+
+Die Stop-Id steht für die jeweilige Haltestelle die man Abfragen möchte.
+
+Unsere eigene API stellt auch noch Endpunkte zum Abfragen der Linienführung und
+der Versätungsdaten bereit. Um sich zu autorisieren muss man noch über einen privaten
+API-Token verfügen, ähnlich des API-Tokens der RNV.
+
 
 ### Verwendete Technologien
 <figure>
