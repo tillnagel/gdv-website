@@ -21,6 +21,7 @@ Parks sind in einer Großstadt oft die einzige Möglichkeit, dem Beton und den M
 Anhand unserer Karte kann man sich davon ein Bild machen, welche besonders ruhige und welche lärmbelastete Parks sind. Bei Letzteren besteht für die Stadt Köln ein großes Potenzial, den Lärmpegel zu reduzieren und seinen Bürgern damit langfristig etwas Gutes zu tun.
 
 Wir haben uns folgende Fragen gestellt:
+
 * Wo befinden sich die Grünflächen in Köln?
 * Welche Hauptlärmquellen sind diese ausgesetzt?
 * Wie ist die Lärmbelastung der Grünflächen im Vergleich?
