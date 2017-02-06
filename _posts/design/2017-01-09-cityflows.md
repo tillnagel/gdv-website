@@ -6,7 +6,7 @@ teaser: "<em>cf. city flows</em> is a comparative visualization environment of u
 header: no
 show_meta: false
 categories:
-    - projects
+    - design
 image:
     title: cf/cfcityflows-nyc.jpg
     caption: Citywide view showing bike trajectories
