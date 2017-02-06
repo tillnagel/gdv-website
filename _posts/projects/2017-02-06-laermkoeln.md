@@ -20,14 +20,13 @@ author: Christine Ernst, Deniz Kaya, Patrick Fruh, Suzy Djomo Kouamou
 Parks sind in einer Großstadt oft die einzige Möglichkeit, dem Beton und den Menschenmengen für eine kurze Weile zu entfliehen. Köln bezeichnet sich diesbezüglich als grüne Stadt. Doch wie viel Entspannungspotenzial haben diese Grünflächen in Betracht des umliegenden Lärms wirklich?
 Anhand unserer Karte kann man sich davon ein Bild machen, welche besonders ruhige und welche lärmbelastete Parks sind. Bei Letzteren besteht für die Stadt Köln ein großes Potenzial, den Lärmpegel zu reduzieren und seinen Bürgern damit langfristig etwas Gutes zu tun.
 
-Wir haben uns folgende Fragen gestellt.
-- Wo befinden sich die Grünflächen in Köln?
-- Welche Hauptlärmquellen sind diese ausgesetzt?
-- Wie ist die Lärmbelastung der Grünflächen im Vergleich?
+Wir haben uns folgende Fragen gestellt:
+* Wo befinden sich die Grünflächen in Köln?
+* Welche Hauptlärmquellen sind diese ausgesetzt?
+* Wie ist die Lärmbelastung der Grünflächen im Vergleich?
 
 Unser Ziel ist es, dem Betrachter eine Exploration zu ermöglichen, die nicht nur informativ ist, sondern auch Spaß macht. Aus diesem Grund werden nicht nur die Grünflächen und der Lärmbereich in Köln angezeigt. Es besteht die Möglichkeit die Hauptlärmquellen aus- bzw. einzuschalten. So erhält man nicht nur einen Überblick darüber, wie stark die Grünfläche belastet ist, sondern auch darüber welche Teilbereich des Parks belastet sind und durch welche Lärmquellen.
 Um detaillierte Informationen zu den Lärmwerten auf den Grünflächen zu liefern, werden neben dem Namen und der Größe des Parks auch die unterschiedlichen Lärmquellen aufgelistet, welche diesen Bereich beeinflussen. Darüber hinaus wird der gemessene Wert in dB angegeben.
-
 
 ## Daten / Auswertung
 
