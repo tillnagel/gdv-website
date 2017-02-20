@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Züricher Parkflächen"
-subheadline: Veranschaulichung und Exploration der Züricher Natur und Parkplätze 
+subheadline: Veranschaulichung und Exploration der Züricher Natur und Parkplätze
 
 teaser: "Vergleich von Natur und Parkplätzen in der Grünstadt Zürich"
 header: no
@@ -10,8 +10,8 @@ categories:
     - projects
 image:
     title: ZuerichParkflaechen/zp_teaser.png
-    caption: Hauptsicht der Applikation 
-author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp, Mihkail Polishuk
+    caption: Hauptsicht der Applikation
+author: Ahmet Ekiz, Kevin Schorpp, Klaus Hipp &amp; Mihkail Polishuk
 ---
 
 ## Abstract

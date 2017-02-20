@@ -10,7 +10,7 @@ categories:
 image:
     title: laermkoeln/teaser.png
     caption: Finaler Prototyp
-author: Christine Ernst, Deniz Kaya, Patrick Fruh, Suzy Djomo Kouamou
+author: Christine Ernst, Deniz Kaya, Patrick Fruh &amp; Suzy Djomo Kouamou
 ---
 
 [Abstract] In diesem Dokument wird beschrieben, wie die Visualisierung des oben genannten Projektes in unserem Team umgesetzt wurde. Hierbei gehen wir auf die Daten, die Probleme und Lösungswege ein, stellen die verwendeten Tools und unsere Ergebnisse vor. Zum Schluss wird in einem Fazit unser Ergebnis kurz zusammengefasst und wir stellen weitere Ideen vor, wie das Projekt fortgeführt werden kann.
@@ -34,7 +34,7 @@ Um detaillierte Informationen zu den Lärmwerten auf den Grünflächen zu liefer
 ### Daten
 Über das [offenen Datenportal der Stadt Köln](https://www.offenedaten-koeln.de) erhält man unter anderem Informationen darüber, wo besonders hohe Ausschläge einiger Hauptlärmquellen gemessen wurden. Hier werden neben dem Straßenlärm und dem Schienenverkehr der DB, des KVBs und des HGKs, auch die Werte von Industrie und dem Luftverkehr über eine interaktive Webanimation bereitgestellt. Dabei werden nicht nur Informationen über die Ausprägung des Lärms innerhalb des Intervalls von 55-75 Dezibel betrachtet, man kann sich auch die Unterschiede zwischen Tag und Nacht vor Augen führen. Im vorliegenden Projekt wurden ebendiese Daten aufbereitet und in Bezug zu den Grünflächen Kölns gestellt.
 
-OpenData Köln bietet eine REST API über die man mit Hilfe des "[AGStoShapefile](https://github.com/tannerjt/AGStoShapefile)" Scripts entsprechende GeoJSON Dateien erhalten kann. Zur Vereinfachung dieser Daten wurde "[Mapshaper](https://github.com/mbloch/mapshaper)" genutzt. Dieses Tool führt zunächst mehrere Dateien mit Ebenen zusammen. So wurden aus anfänglich ca. 30 verschiedenen Dateien zu Straßenlärm eine einzelne. Nach der Zusammenführung der Dateien wurden die Ebenen "aufgelöst". Da in den Dateien eine sehr große Anzahl von Ebenen vorhanden war, mussten diese reduziert werden. Nach der Ausführung gab es zu jeder Lärmquelle nur noch eine Ebene für jede Dezibel-Größe. Zur Reduzierung der Punkte der Polygone und für eine bessere Performance, wurden diese schließlich noch mit dem "Douglas-Peucker-Algorithmus" ([Beispiel](http://karthaus.nl/rdp/)) vereinfacht. 
+OpenData Köln bietet eine REST API über die man mit Hilfe des "[AGStoShapefile](https://github.com/tannerjt/AGStoShapefile)" Scripts entsprechende GeoJSON Dateien erhalten kann. Zur Vereinfachung dieser Daten wurde "[Mapshaper](https://github.com/mbloch/mapshaper)" genutzt. Dieses Tool führt zunächst mehrere Dateien mit Ebenen zusammen. So wurden aus anfänglich ca. 30 verschiedenen Dateien zu Straßenlärm eine einzelne. Nach der Zusammenführung der Dateien wurden die Ebenen "aufgelöst". Da in den Dateien eine sehr große Anzahl von Ebenen vorhanden war, mussten diese reduziert werden. Nach der Ausführung gab es zu jeder Lärmquelle nur noch eine Ebene für jede Dezibel-Größe. Zur Reduzierung der Punkte der Polygone und für eine bessere Performance, wurden diese schließlich noch mit dem "Douglas-Peucker-Algorithmus" ([Beispiel](http://karthaus.nl/rdp/)) vereinfacht.
 
 ### Prozess
 Da die Daten auf den Lärmbereich von 55-75 Dezibel beschränkt sind, kann die bei der Visualisierung als lärmfrei dargestellte Fläche tatsächlich leistungsschwächere bzw. -stärkere Lärmquellen beinhalten.
@@ -75,7 +75,7 @@ Bei der Darstellung der Stadt haben wir uns für eine 3D-Karte entschieden. Beim
 
 Der Nutzer hat die Möglichkeit näher heran zu zoomen und die Karte zu drehen, was die 3D-Ansicht erscheinen lässt. Es ist außerdem möglich wieder hinaus zu zoomen. Es ist ebenfalls möglich die Karte in alle Richtungen zu verschieben. Die Lärmquellen werden aber nur für den zur Verfügung stehenden Bereich angezeigt. Es wurden hier echte Daten verwendet, wobei Lärmquellen, die keinerlei Einfluss auf die Grünflächen haben, z.B. Flughafen-Lärm, nicht dargestellt werden.
 
-Aufgrund der Visualisierung wurde deutlich, dass Lärm in Grünflächen weitestgehend gleich verteilt ist. Hauptlärmverursacher sind der Straßenlärm und der Zugverkehr der Deutschen Bahn. Der Industrielärm fällt hingegen nur sehr gering aus. In dem gemessenen Lärmbereich wird ziemlich deutlich, dass es kaum Parks gibt, die nicht von Lärm betroffen sind, wobei der Hauptlärm sich meist am Rand lokalisiert. 
+Aufgrund der Visualisierung wurde deutlich, dass Lärm in Grünflächen weitestgehend gleich verteilt ist. Hauptlärmverursacher sind der Straßenlärm und der Zugverkehr der Deutschen Bahn. Der Industrielärm fällt hingegen nur sehr gering aus. In dem gemessenen Lärmbereich wird ziemlich deutlich, dass es kaum Parks gibt, die nicht von Lärm betroffen sind, wobei der Hauptlärm sich meist am Rand lokalisiert.
 
 ### Processing
 Die erste Implementierung erfolgte in [Processing](https://processing.org). Processing beinhaltet eine eigene Entwicklungsumgebung welche für die Einsatzbereiche von Grafik, Simulation und Animation spezialisiert ist. Es hat den Charakter einer stark vereinfachten Version der Programmiersprache Java, ermöglicht allerdings Interaktionen und visuelle Elemente zu programmieren. Processing enthält Klassenbibliotheken welche vor allem für Videos, Grafiken, Grafikformate, Sound, Animation, Typographie, 3D, Simulation, Datenzugriff und -transfer sowie Netzwerkprotokolle beinhalten und ist somit sehr gut für die Visualisierung von Daten geeignet.
@@ -87,7 +87,7 @@ Schwierigkeiten traten auf, wenn der Mauszeiger sich über einer Grünfläche be
 Da die Daten für den Lärm in einer Datei vereinfacht hinterlegt wurden, mussten diese für die Filter-Funktion wieder separiert werden. Dadurch war es nicht so einfach wirklich alle entsprechenden Lärm-Marker ein- bzw. wieder einzublenden.
 
 Es gab ebenfalls Probleme bei der Darstellung der Informationen für die Grünflächen im Detail. So war es in Processing sehr schwer die Daten auszuwerten, da die GeoJSON-Daten einzeln ausgelesen und verglichen werden mussten. Es konnten einige Libraries nicht eingebunden werden, so dass wir nur mit Hilfe des "GeoJSONReader" von Unfolding an diese Daten kamen. Allerdings war die Rückgabe eine Liste mit allen Polygonen. Diese Polygone mussten nun in einzelne Punkte zerlegt werden um diese zur Auswertung nutzen zu können.
-Weitere Probleme gab es bei der Visualisierung der Diagramme in der Detailbox. Trotz aller Anstrengungen wurden diese nicht angezeigt und so war eine Weiterarbeit an diesen nicht möglich. 
+Weitere Probleme gab es bei der Visualisierung der Diagramme in der Detailbox. Trotz aller Anstrengungen wurden diese nicht angezeigt und so war eine Weiterarbeit an diesen nicht möglich.
 Da neben den oben genannten Problemen weitere schwerwiegende bei der Performance auftragen (langsames Laden der Daten und starkes Ruckeln) und keine Libraries zur Flächenberechnung der Polygone zur Verfügung standen, haben wir uns entschieden das Projekt mit JavaScript und Mapbox umzusetzen.
 
 ### Mapbox GL und Turf.js
@@ -106,6 +106,6 @@ Mit dem Tool [Mapbox](https://www.mapbox.com) kann man interaktive Karten erstel
 Die Flächenberechnung und -auswertung mit Turf führte leider zu ein paar Problemen. So kam es bei der Berechnung ab und an zu Abstürzen des Programmes. Im Tortendiagramm, welches den Prozentualen Anteil von Lärm und Lärmfreien Bereichen darstellt, kommt es zu Überschneidungen. Da wir nur die Werte der einzelnen Lärmbereiche erhalten haben, war es (bisher) nicht möglich die tatsächlich lärmfreien Bereiche zu berechnen. Dadurch sieht es in einigen Bereichen so aus, als ob mehr Lärm vorhanden ist, als es tatsächlich der Fall ist.
 
 ## Fazit
-Lärm ist nicht der einzige Aspekt, der den Entspannungsgrad einer Freizeitanlage bestimmt. Allerdings bietet eine ruhige Umgebung eine wichtige Grundlage. 
+Lärm ist nicht der einzige Aspekt, der den Entspannungsgrad einer Freizeitanlage bestimmt. Allerdings bietet eine ruhige Umgebung eine wichtige Grundlage.
 Aufgrund der bereits erwähnten Umstellung und dem daraus resultierenden Zeitmangel, mussten leider einige Visualisierungen anders oder vereinfacht dargestellt werden. So konnten wir die Vergrößerung auf die Grünfläche bei Klick, sowie die Detail-Informationen, nicht mehr umsetzen. Es war ebenfalls nicht mehr möglich, die korrekte Darstellung des Lärmbereichs im Kreisdiagramm zu realisieren.
 Es besteht die Möglichkeit weitere Details zu den Grünflächen hinzuzufügen. Weiter könnten die Parks unter den Grünflächen hervorgehoben sowie anklickbar gemacht werden, damit bei Klick direkt auf diese gezoomt wird. Einen Vergleich zwischen mehreren Parks können wir uns ebenfalls gut vorstellen.

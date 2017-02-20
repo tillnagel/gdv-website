@@ -9,7 +9,7 @@ categories:
     - projects
 image:
     title: radwegezuerich/wr_teaser.png
-author: Hunar Mawlod &amp; Giang Pham &amp; Timon Vogler &amp; Mahmoud Abou El Azm
+author: Hunar Mawlod, Giang Pham, Timon Vogler &amp; Mahmoud Abou El Azm
 ---
 
 ### Abstract
@@ -76,7 +76,7 @@ Beim Quartier Escher-Wyss handelt es sich um ein Industriegebiet, das auch viele
   <img src="{{ site.urlimg }}/radwegezuerich/escherwyss.png" />
 </figure>
 
-Beim Quartier Enge fällt auf, dass auf der gleichen Straße entlang des Flusses drei Radwege eingezeichnet sind. Es besteht der Verdacht, dass die redundanten Linien in die Berechnungen einflossen. Diese Linien sind in der Mitte der nachfolgenden Abbildung zu sehen. 
+Beim Quartier Enge fällt auf, dass auf der gleichen Straße entlang des Flusses drei Radwege eingezeichnet sind. Es besteht der Verdacht, dass die redundanten Linien in die Berechnungen einflossen. Diese Linien sind in der Mitte der nachfolgenden Abbildung zu sehen.
 
 <figure>
   <img src="{{ site.urlimg }}/radwegezuerich/enge.png" />
@@ -109,8 +109,8 @@ Interaktionsmöglichkeiten: Hover und Auswahl der Quartiere über Scatterplot un
   <img src="{{ site.urlimg }}/radwegezuerich/tool_final.png" />
 </figure>
 
-## Resümee und Ausblick 
-Es konnte tatsächlich die These belegt werden, dass es einen Zusammenhang zwischen der Einwohnerzahl und der Radweglänge gibt. Durch die Visualisierung, konnten auch unerwartete und interessante Auffälligkeiten entdeckt werden. 
+## Resümee und Ausblick
+Es konnte tatsächlich die These belegt werden, dass es einen Zusammenhang zwischen der Einwohnerzahl und der Radweglänge gibt. Durch die Visualisierung, konnten auch unerwartete und interessante Auffälligkeiten entdeckt werden.
 
 Das Projekt kann weitergeführt werden, indem weitere Faktoren betrachtet werden, die mit der Verteilung der Radwege zusammenhängen könnten.
 Zum Beispiel, dass untersucht wird, ob es mehr Radwege in Quartieren gibt, in denen viele junge Familien oder generell junge Menschen leben. Es ist auch denkbar zu prüfen, ob mehr Radwege in der Nähe von öffentlichen Gebäuden (Supermärkte, Schulen etc.) existieren.

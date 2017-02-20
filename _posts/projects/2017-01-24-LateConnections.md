@@ -10,7 +10,7 @@ categories:
 image:
     title: LateConnections/main.png
     caption: Verspätungsansicht
-author: Manuel Bäurle &amp; Dennis Kern &amp; Dimitry Nagorny &amp; Philip Pregler &amp; Ugur Tunali
+author: Manuel Bäurle, Dennis Kern, Dimitry Nagorny, Philip Pregler &amp; Ugur Tunali
 ---
 
 
